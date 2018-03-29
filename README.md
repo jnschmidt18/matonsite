@@ -1,3 +1,3 @@
 # matonsite
-the site of maton games
-done be a fool. buy the game.
+the site of maton games. 
+dont be a fool. buy the game.
