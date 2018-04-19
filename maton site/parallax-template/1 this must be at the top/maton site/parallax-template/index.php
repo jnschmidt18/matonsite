@@ -9,35 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	function logIP()
-{
-     $ipLog="logfile.htm"; // Your logfiles name here (.txt or .html extensions ok)
-
-     // IP logging function by Dave Lauderdale
-     // Originally published at: www.digi-dl.com
-
-     $register_globals = (bool) ini_get('register_gobals');
-     if ($register_globals) $ip = getenv(REMOTE_ADDR);
-     else $ip = $_SERVER['REMOTE_ADDR'];
-
-     $date=date ("l dS of F Y h:i:s A");
-     $log=fopen("$ipLog", "a+");
-
-     if (preg_match("/\\bhtm\\b/i", $ipLog) || preg_match("/\\bhtml\\b/i", $ipLog))
-     {
-          fputs($log, "Logged IP address: $ip - Date logged: $date<br>");
-     }
-     else fputs($log, "Logged IP address: $ip - Date logged: $date\
-");
-
-     fclose($log);
-}
-// Place the below function call wherever you want the script to fire.
-logIp();
-
-
-?>
-
+  
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -59,7 +31,7 @@ logIp();
           <h5 class="header col s12 light">Probably Actually the Greatest Game of all Time</h5>
         </div>
         <div class="row center">
-          <a href="http://www.mattoonsrevenge.com" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Download Now
+          <a href="http://www.mattoonsrevenge.com/download" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Download Now
 		  </a>
         </div>
         <br><br>
@@ -125,7 +97,7 @@ logIp();
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Please Don't Contact Us</h4>
-          <p class="center-align light">We're not social. Actually. You can find our Githubs down below.</p>
+          <p class="center-align light">We're not social. Just check out our other game, <a href="zoom">Zoom Mattoon</a>. Also, you can find our Githubs down below.</p>
         </div>
       </div>
 
@@ -137,7 +109,7 @@ logIp();
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-           <h5 class="header center black-text s12 dark ">If you buy the game, we might buy you coffee. Sounds like a chance worth taking to me. And don't beg the developers for free versions. We won't give you one.</h5>
+           <h5 class="header center black-text s12 dark ">If you buy the game, we might give you coffee. Sounds like a chance worth taking to me. And don't beg the developers for free versions. We won't give you one.</h5>
         </div>
       </div>
     </div>
@@ -150,7 +122,7 @@ logIp();
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
           <p class="grey-text text-lighten-4">We are a team of high school students working on this project. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-			 <li><a class="white-text" href="https://paypal.me/JosiahSchmidt">Plz give monies on paypal. They help feed the website designer, since I don't get paid otherwise.</a></li>
+			 <li><a class="white-text" href="https://paypal.me/ITexMachina">Plz give monies on paypal. They help feed the team and the website designer, since he doesn't get paid otherwise.</a></li>
 
         </div>
 		<div class="col l3 s12">
@@ -165,7 +137,7 @@ logIp();
         <div class="col l3 s12">
           <h5 class="white-text"></h5>
           <ul>
-            <li><img src="https://avatars0.githubusercontent.com/u/37462831?s=200&v=4"></li>
+            <li><a href="zoom"><img src="https://avatars0.githubusercontent.com/u/37462831?s=200&v=4"></a></li>
           </ul>
         </div>
         
